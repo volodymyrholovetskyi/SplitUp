@@ -1,0 +1,3 @@
+# Split UP
+
+SplitUP is a convenient group expense management app that helps you easily split expenses between friends, family, or colleagues. Whether you're traveling, splitting dinner bills, or paying for shared housing, SplitUP automatically calculates who owes whom and how much, eliminating confusion. The application supports different ways of dividing costs (even, uneven, by percentages), and also synchronizes data between all participants in real time. Receive reports, track payments and simplify financial settlements with SplitUP!
