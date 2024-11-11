@@ -1,4 +1,4 @@
-package ua.vholovetskyi.splitup.commons.dto;
+package ua.vholovetskyi.splitup.commons.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -20,4 +20,5 @@ public class ApiResponse<BODY, ERROR> {
             return errorFunction.apply(error);
         }
     }
+
 }

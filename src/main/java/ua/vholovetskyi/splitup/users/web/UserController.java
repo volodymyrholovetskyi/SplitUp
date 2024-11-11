@@ -23,8 +23,8 @@ public class UserController {
     public ResponseEntity<?> createUser(@RequestBody UserDto userDto) {
         return userService.createUser(userDto)
                 .handle(
-                        userId -> ResponseEntity.status(HttpStatus.CREATED).body(userId),
-                        error -> new ResponseEntity<>(error, HttpStatus.BAD_REQUEST)
+                        userSuccess -> ResponseEntity.status(HttpStatus.CREATED).body(userSuccess),
+                        userError -> ResponseEntity.status(HttpStatus.CONFLICT).body(userError)
                 );
     }
 }

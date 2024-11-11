@@ -8,6 +8,6 @@ import java.time.Instant;
 public class UserFactory {
 
     public static User createNewUser(UserDto userDto) {
-        return new User(userDto.getUsername(), userDto.getEmail(), userDto.getPassword(), Instant.now());
+        return new User(userDto.getUsername(), userDto.getPassword(), Instant.now());
     }
 }

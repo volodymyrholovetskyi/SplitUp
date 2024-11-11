@@ -1,11 +1,11 @@
 package ua.vholovetskyi.splitup.users.web.dto;
 
-import ua.vholovetskyi.splitup.commons.dto.ApiResponse;
-import ua.vholovetskyi.splitup.commons.dto.Error;
+import ua.vholovetskyi.splitup.commons.response.ApiResponse;
+import ua.vholovetskyi.splitup.commons.response.Error;
 
 public class UserResponse extends ApiResponse<Long, Error> {
 
-    public UserResponse(Long id, Error error, boolean success) {
+    private UserResponse(Long id, Error error, boolean success) {
         super(id, error, success);
     }
 

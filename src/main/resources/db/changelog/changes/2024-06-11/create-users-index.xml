@@ -9,9 +9,5 @@
         <createIndex tableName="users" indexName="idx_username">
             <column name="username"/>
         </createIndex>
-
-        <createIndex tableName="users" indexName="idx_email">
-            <column name="email"/>
-        </createIndex>
     </changeSet>
 </databaseChangeLog>

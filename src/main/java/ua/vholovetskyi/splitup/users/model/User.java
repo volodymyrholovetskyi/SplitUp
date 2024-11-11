@@ -13,7 +13,6 @@ import java.time.Instant;
         name = "users",
         indexes = {
                 @Index(name = "idx_username", columnList = "username"),
-                @Index(name = "idx_email", columnList = "email")
         }
 )
 public class User {
@@ -27,18 +26,14 @@ public class User {
     @Column(unique = true, nullable = false)
     private String username;
 
-    @Column(unique = true, nullable = false)
-    private String email;
-
     @Column(name = "password_hash", nullable = false)
     private String password;
 
     @Column(nullable = false)
     private Instant createdAt;
 
-    public User(String username, String email, String password, Instant created) {
+    public User(String username, String password, Instant created) {
         this.username = username;
-        this.email = email;
         this.password = password;
         this.createdAt = created;
     }
